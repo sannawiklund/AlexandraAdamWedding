@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/267/267080.png">
+    <title>Alexandra & Adam</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <img src="Alexandra & Adam (Copy) (1).jpg" alt="">
+            <!-- <h1 id="alexandra">ALEXANDRA</h1>
+            <h1 id="olsson">Olsson</h1>
+            <h1 id="and">&</h1>
+            <h1 id="adam">ADAM</h1>
+            <h1 id="andersson">Andersson</h1> -->
+        </header>
+
+        <main>
+            <section class="wedding-details">
+                <h2 id="info">INFORMATION</h2>
+                <p>Datum: 3/08/2024</p>
+                <p>Tid för vigsel: 16:00</p>
+                <p>Tid för bröllopsfest: 18:00</p>
+                <p>Plats: Marstrands Kyrka</p>
+                <p id="important">Vänligen notera att inbjudan enbart gäller de som blivit adresserade via brev.</p>
+            </section>
+
+            <div class="attendance-Formula">
+                <h2>FORMULÄR FÖR BRÖLLOPSGÄSTER</h2>
+                <form action="submit.php" method="post">
+                    <!-- För att faktiskt lagra informationen behöver du en server som kan hantera detta. 
+                    I filen submit.php (eller namnet på den serverfil du använder) kan du skriva kod för att behandla data 
+                    och lagra den i en databas, skicka e-postmeddelanden, eller göra andra önskade åtgärder beroende på dina behov. -->
+                    <label for="name">Ditt namn:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Din e-post:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="attendance">Kommer du att närvara?</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="yes">Ja</option>
+                        <option value="no">Nej</option>
+                    </select>
+
+                    <label for="ceremony">Kommer du att närvara under vigseln?</label>
+                    <select id="ceremony" name="ceremony" required>
+                        <option value="yes">Ja</option>
+                        <option value="no">Nej</option>
+                    </select>
+
+                    <label for="party">Deltar du i bröllopsfesten?</label>
+                    <select id="party" name="party" required>
+                        <option value="yes">Ja</option>
+                        <option value="no">Nej</option>
+                    </select>
+
+                    <label for="allergies">Kommentar vid eventuell matallargi matallergier:</label>
+                    <textarea id="allergies" name="allergies" rows="4"></textarea>
+
+                    <label for="message">Kommentar (valfritt):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
