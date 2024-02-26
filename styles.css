@@ -19,20 +19,23 @@ header>img {
     margin: 0px;
 }
 
-h1 {
-    color: #1d3557;
+/* h1 {
+    color: #2F4151;
     margin: 1px;
-}
+    font-weight: 50;
+    font-size: 30px;
+} */
 
 h2 {
     margin: 2px;
     padding: 2px;
-    color: #1d3557;
-    font-size: 25px;
+    color: #2F4151;
+    font-weight: 300;
+    font-size: 30px;
     letter-spacing: 1px;
 }
 
-#alexandra,
+/* #alexandra,
 #adam {
     font-weight: bolder;
 }
@@ -44,14 +47,20 @@ h2 {
     font-weight: lighter;
     font-style: italic;
     margin: 0px;
-}
+} */
 
 .wedding-details {
     margin-bottom: 30px;
-    color: #1d3557;
-    /* color: #638b66; */
+    color: #2F4151;
     margin: 2px;
     font-size: 16px;
+    /* border-bottom: #2F4151;
+    border-style: dashed;
+    border-width: 2px; */
+}
+
+hr {
+    margin-top: 3px;
 }
 
 #important {
