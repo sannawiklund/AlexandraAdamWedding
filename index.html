@@ -30,30 +30,45 @@
             <section class="wedding-details">
                 <h2 id="info">INFORMATION</h2>
                 <p> <strong>Datum:</strong> 3/08/2024 | <strong>Tid för vigsel:</strong> 16:00</p>
-                <p> <strong>Plats:</strong> Marstrands Kyrka - Marstrandsön</p>
+                <p> <strong>Plats:</strong> Marstrands Kyrka - Drottninggatan, 442 67 Marstrand</p>
                 <p> <strong>Bröllopsfesten börjar:</strong> 18:00</p>
+                <hr>
+                <div class="dresscode">
+                    <h3>Klädsel</h3>
+                    <p>Information om klädsel här</p>
+                </div>
+                <hr>
+                <div class="plus-one">
+                    <h3>Plus One</h3>
+                    <p id="important">Vänligen notera att inbjudan enbart gäller de som blivit adresserade via brev.</p>
+                </div>
 
-                <p id="important">Vänligen notera att inbjudan enbart gäller de som blivit adresserade via brev.</p>
             </section>
+
             <hr>
-            <div class="attendance-Formula">
+
+            <div class="attendance-information">
+                <h3>OSA</h3>
+                <h4>Skicka era svar på nedan frågor till test.email.com senast 01/02/2024:</h4>
+                <ul>
+                    <li>Kommer du/ni att närvara under vigseln? Ja | Nej</li>
+                    <li>Kommer du/ni att närvara under bröllopsfesten? Ja|Nej</li>
+                    <li>Kommer du/ni att närvara under middagen? Ja | Nej
+                    <li id="allergies">Om Ja - Notera eventuella matallergier.</li>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="attendance-Formula">
                 <h2>FORMULÄR FÖR BRÖLLOPSGÄSTER</h2>
-                
-                <form action="submit.php" method="post">
-                    <!-- För att faktiskt lagra informationen behöver du en server som kan hantera detta. 
-                    I filen submit.php (eller namnet på den serverfil du använder) kan du skriva kod för att behandla data 
-                    och lagra den i en databas, skicka e-postmeddelanden, eller göra andra önskade åtgärder beroende på dina behov. -->
+
+                <form action="mailto:sanna.wiklund98@gmail.com" method="post" enctype="text/plain">
+            
                     <label for="name">Ditt namn:</label>
                     <input type="text" id="name" name="name" required>
 
                     <label for="email">Din e-post:</label>
                     <input type="email" id="email" name="email" required>
-
-                    <!-- <label for="attendance">Kommer du att närvara?</label>
-                    <select id="attendance" name="attendance" required>
-                        <option value="yes">Ja</option>
-                        <option value="no">Nej</option>
-                    </select> -->
 
                     <label for="ceremony">Kommer du att närvara under vigseln?</label>
                     <select id="ceremony" name="ceremony" required>
@@ -75,7 +90,7 @@
 
                     <button type="submit">Skicka</button>
                 </form>
-            </div>
+            </div> -->
 
         </main>
 

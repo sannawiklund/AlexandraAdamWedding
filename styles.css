@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     padding: 5px;
     background-color: white;
+    box-shadow: 6px 5px 2px rgba(52, 52, 52, 0.23);
 }
 
 header>img {
@@ -35,6 +36,43 @@ h2 {
     letter-spacing: 1px;
 }
 
+h3 {
+    margin: 0px;
+    padding: 0px;
+    color: #2F4151;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.dresscode p, .plus-one p {
+    margin: 2px;
+    padding: 0px;
+}
+
+.dresscode h3, .plus-one h3{
+    font-style: italic
+}
+
+.attendance-information {
+    border: #2F4151;
+}
+
+ul, li {
+    margin: 2px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+#allergies {
+    font-style: italic;
+}
 /* #alexandra,
 #adam {
     font-weight: bolder;
@@ -64,7 +102,7 @@ hr {
 }
 
 #important {
-    font-style: italic;
+    font-style: bold;
     font-size: 17px;
 }
 
