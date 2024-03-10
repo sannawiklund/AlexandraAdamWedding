@@ -12,6 +12,7 @@ body {
     font-family: var(--main-font);
     background-color: var(--main-bg-color);
     color: #333333;
+    overflow-x: hidden;
 }
 
 .container {
@@ -20,13 +21,21 @@ body {
     padding: 10px;
     background-color: var(--main-bg-color);
     box-shadow: 6px 10px 20px rgba(52, 52, 52, 0.23);
+    text-wrap: balance;
+}
+
+header {
+    text-align: center;
+    overflow: hidden;
 }
 
 header>img {
-    display: flex;
-    align-content: center;
+    width: 100%;
+    height: auto;
     max-width: 800px;
-    margin: 0px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 h1,
@@ -40,7 +49,8 @@ h4 {
     letter-spacing: 1px;
 }
 
-h1 {
+h1,
+footer {
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -54,23 +64,16 @@ h3 {
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 15px;
     font-weight: bolder;
 }
 
 
 p {
-    margin: 4px;
+    margin: 2px;
 }
 
-/* hr {
-    margin: 10px;
-    width: 800px;
-    text-align: center;
-} */
-
-
-ul{
+ul {
     text-align: start;
     list-style-type: circle;
     font-size: 16px;
@@ -80,7 +83,7 @@ ul{
 
 main {
     text-align: start;
-    padding: 2em;
+    padding: 1.5em;
     margin: 1em;
 }
 
@@ -98,7 +101,7 @@ label {
 }
 
 #welcome-title {
-    color: #2F4151;
+    color: var(--main-header-color);
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
@@ -128,13 +131,19 @@ label {
     grid-row: 1;
 }
 
-#ceremony-dinner, #dresscode, #weddingspeech,
-.transfer-staying, #gifts, #plusone, .attendance-information {
-    padding-top: 2em;
-    padding-bottom: 2em;
+#ceremony-dinner,
+#dresscode,
+#weddingspeech,
+.transfer-staying,
+#gifts,
+#plusone,
+.attendance-information {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.transfer-staying, #toasters {
+.transfer-staying,
+#toasters {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -143,19 +152,19 @@ label {
 ul.noDot {
     padding: 0;
 }
-.noDot >li {
+
+.noDot>li {
     list-style-type: none;
-    padding-left: 0;
 }
 
 #toasters h3 {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 #toastmadame {
     grid-column: 1;
     grid-row: 1;
-} 
+}
 
 #toastmaster {
     grid-column: 2;
@@ -182,32 +191,30 @@ ul.noDot {
 
 #marstrandIMG {
     margin: 0 auto;
-    padding: 10px;
-    max-width: 70%;
+    padding-top: 3em;
+    padding: 15px;
+    max-width: 80%;
 }
 
 .wedding-details {
     margin-bottom: 30px;
-    color: #2F4151;
+    color: var(--main-header-color);
     margin: 2px;
     font-size: 16px;
 }
 
-#mail {
-    color: #2F4151;
+#mail,
+#ferry {
+    color: var(--main-header-color);
     font-style: italic;
-}
-
-/* #alexandra,
-#adam {
     font-weight: bolder;
 }
 
-#olsson,
-#and,
-#andersson {
+footer {
+    text-align: center;
+    color: white;
+    background-color: #2f4151;
     font-size: 20px;
-    font-weight: lighter;
-    font-style: italic;
-    margin: 0px;
-} */
+    border-radius: 20px;
+    padding: 5px;
+}
