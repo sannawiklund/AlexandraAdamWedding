@@ -1,16 +1,25 @@
+:root {
+    --main-font: "EB Garamond", serif;
+    --main-font-size: 1rem;
+    --main-header-color: #2F4151;
+    --main-color: #000000;
+    --main-bg-color: #fefff8;
+    --main-font-weight: 300;
+}
+
 body {
     margin: 0;
-    font-family: "EB Garamond", serif;
-    background-color: #e4eefd;
+    font-family: var(--main-font);
+    background-color: var(--main-bg-color);
     color: #333333;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 6px 2px 10px rgba(52, 52, 52, 0.23);
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    box-shadow: 6px 10px 20px rgba(52, 52, 52, 0.23);
 }
 
 header>img {
@@ -20,59 +29,175 @@ header>img {
     margin: 0px;
 }
 
-/* h1 {
-    color: #2F4151;
-    margin: 1px;
-    font-weight: 50;
+h1,
+h2,
+h3,
+h4 {
+    color: var(--main-header-color);
+    margin: 0em;
+    padding: 2px;
+    font-weight: var(--main-font-weight);
+    letter-spacing: 1px;
+}
+
+h1 {
     font-size: 30px;
-} */
+    text-transform: uppercase;
+}
 
 h2 {
-    margin: 2px;
-    padding: 2px;
-    color: #2F4151;
-    font-weight: 300;
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-size: 22px;
 }
 
 h3 {
-    margin: 0px;
-    padding: 0px;
-    color: #2F4151;
-    font-weight: 300;
-    font-size: 25px;
-    letter-spacing: 1px;
-}
-
-h4 {
-    margin: 0px;
     font-size: 18px;
 }
 
-.dresscode p, .plus-one p {
-    margin: 2px;
-    padding: 0px;
+h4 {
+    font-size: 1em;
+    font-weight: bolder;
 }
 
-.dresscode h3, .plus-one h3{
-    font-style: italic
+
+p {
+    margin: 4px;
 }
 
-.attendance-information {
-    border: #2F4151;
-}
-
-ul, li {
-    margin: 2px;
+/* hr {
+    margin: 10px;
+    width: 800px;
     text-align: center;
+} */
+
+
+ul{
+    text-align: start;
+    list-style-type: circle;
+    font-size: 16px;
+    margin: 1px;
+    padding-left: 20px;
+}
+
+main {
+    text-align: start;
+    padding: 2em;
+    margin: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px;
+}
+
+.welcome-information {
+    text-align: center;
+}
+
+#welcome-title {
+    color: #2F4151;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+#info-container {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#ceremony-dinner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#ceremony {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#dinner-party {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#ceremony-dinner, #dresscode, #weddingspeech,
+.transfer-staying, #gifts, #plusone, .attendance-information {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.transfer-staying, #toasters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+ul.noDot {
+    padding: 0;
+}
+.noDot >li {
     list-style-type: none;
+    padding-left: 0;
+}
+
+#toasters h3 {
+    font-size: 25px;
+}
+
+#toastmadame {
+    grid-column: 1;
+    grid-row: 1;
+} 
+
+#toastmaster {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#staying {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#hotels {
+    text-align: start;
+}
+
+#parking {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#parking h2 {
+    font-size: 22px;
+}
+
+#marstrandIMG {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.wedding-details {
+    margin-bottom: 30px;
+    color: #2F4151;
+    margin: 2px;
     font-size: 16px;
 }
 
-#allergies {
+#mail {
+    color: #2F4151;
     font-style: italic;
 }
+
 /* #alexandra,
 #adam {
     font-weight: bolder;
@@ -86,64 +211,3 @@ ul, li {
     font-style: italic;
     margin: 0px;
 } */
-
-.wedding-details {
-    margin-bottom: 30px;
-    color: #2F4151;
-    margin: 2px;
-    font-size: 16px;
-    /* border-bottom: #2F4151;
-    border-style: dashed;
-    border-width: 2px; */
-}
-
-hr {
-    margin-top: 3px;
-}
-
-#important {
-    font-style: bold;
-    font-size: 17px;
-}
-
-main {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 10px;
-}
-
-input,
-select,
-textarea {
-    font-size: 17px;
-    font-family: "EB Garamond", serif;
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.attendance-Formula {
-    font-size: 17px;
-}
-
-button {
-    background-color: #8db580;
-    color: #ffffff;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #638b66;
-    /* mörkare färg vid hover */
-}
