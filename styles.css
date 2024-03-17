@@ -43,8 +43,7 @@ h2,
 h3,
 h4 {
     color: var(--main-header-color);
-    margin: 0em;
-    padding: 2px;
+    margin: 2px;
     font-weight: var(--main-font-weight);
     letter-spacing: 1px;
 }
@@ -78,7 +77,7 @@ ul {
     list-style-type: circle;
     font-size: 16px;
     margin: 1px;
-    padding-left: 20px;
+    padding-left: 18px;
 }
 
 main {
@@ -155,6 +154,7 @@ ul.noDot {
 
 .noDot>li {
     list-style-type: none;
+    margin-left: 4px;
 }
 
 #toasters h3 {
@@ -211,10 +211,57 @@ ul.noDot {
 }
 
 footer {
-    text-align: center;
-    color: white;
-    background-color: #2f4151;
-    font-size: 20px;
-    border-radius: 20px;
+    display: flex;
     padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #2f4151;
+    font-size: 30px;
+    padding-top: 0.5em;
+    white-space: nowrap;
+}
+
+footer img#E1,
+footer img#E2 {
+    max-width: 20%;
+    max-height: 100%;
+    opacity: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    header {
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+    .container {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
 }
