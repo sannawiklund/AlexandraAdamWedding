@@ -193,6 +193,12 @@ ul.noDot {
     font-size: 22px;
 }
 
+#lastCall {
+    padding-top: 5px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
 .wedding-details {
     margin-bottom: 30px;
     color: var(--main-header-color);
@@ -267,27 +273,12 @@ footer img#E2 {
         padding-top: 1em;
     }
 
+    #parking {
+        padding-top: 1em;
+    }
+
     footer p {
         font-size: 30px;
     }
 
 }
-
-/* @media only screen and (max-width: 380px) {
-    .container {
-        max-width: 100%;
-    }
-
-    main {
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        max-width: 100%;
-    }
-
-    footer p {
-        font-size: 20px;
-    }
-} */
