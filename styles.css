@@ -195,8 +195,9 @@ ul.noDot {
 
 #lastCall {
     padding-top: 5px;
+    padding-left: 1em;
     font-style: italic;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 .wedding-details {
@@ -213,6 +214,9 @@ ul.noDot {
     font-weight: bolder;
 }
 
+#ending {
+    text-wrap:wrap;
+}
 footer {
     display: flex;
     padding: 5px;
@@ -250,6 +254,12 @@ footer img#E2 {
     #toasters {
         grid-template-columns: 1fr auto;
         grid-row: auto;
+    }
+
+    #lastCall {
+        padding-left: 0px;
+        text-wrap: nowrap;
+        letter-spacing: 0.5px;
     }
 
     #ceremony,
