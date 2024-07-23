@@ -208,7 +208,7 @@ ul.noDot {
 }
 
 #mail,
-#ferry {
+#ferry, #giftlist {
     color: var(--main-header-color);
     font-style: italic;
     font-weight: bolder;
